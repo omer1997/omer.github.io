@@ -1,0 +1,176 @@
+ @import url(./fonts.css);              /*import fonts from fonts.css*/
+ body{
+     background-color: whitesmoke;
+ }
+ /* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+ /*start navigation*/
+ 
+ .navbar-brand{
+    padding: 0 2rem 0 2rem;
+ }
+/*end nav*/
+.navbar{
+    padding: 0 5rem;
+}
+.nav-link{
+    font: normal 700 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+   /* -webkit-text-fill-color: transparent; */
+    background-clip: text;
+}
+
+a:hover{
+    color: #00FF00; 
+}
+
+
+/*banner area */
+ h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+ h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+ h1{
+    font-size: 5rem;
+}
+
+ h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+/*buttons*/
+.btn {
+    border: 5px solid;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 20px bold;
+    font-weight:500;
+    cursor: pointer;
+    display: inline-block;
+    margin :15px;
+  }
+/* Green */
+.hireme {
+    color: rgb(40, 228, 40);
+  }
+  
+  .hireme:hover {
+  border:1px solid;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Blue */
+  .getcv {
+    color: dodgerblue;
+  }
+  
+  .getcv:hover {
+    background: #2196F3;
+    color: white;
+  }
+
+/* end banner area */
+
+/* Start About Area */ 
+
+ .about-area{
+  padding: 8rem 5rem;
+}
+
+.paragraph > p{
+  padding: .4rem 0;
+}
+
+
+.downloadcv {
+  color: dodgerblue;
+}
+
+.downloadcv:hover {
+  background: #2196F3;
+  color: white;
+}
+/* End About Area */
+
+
+/* Services Area */ 
+
+.site-main .services-area{
+  padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+  padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+  font-size: 35px;
+}
+
+.site-main > .services-area .services{
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem .5rem;
+  transition: box-shadow .7s ease;
+}
+
+.site-main > .services-area .services:hover{
+  box-shadow: var(--box-shadow);
+}
+
+/* End Services Area */ 
+
+
+/* Footer Area */ 
+
+footer.footer-area{
+  padding: 5rem 0;
+  background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+  font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+  font-size:22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+  color: var(--primary-color);
+}
+
+
+/* End Footer */ 
